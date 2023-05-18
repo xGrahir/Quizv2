@@ -166,6 +166,10 @@ class Quiz {
         } else if (this.indexOfAns+1 != this.questions[this.numQuestion].correct && i == this.indexOfAns) {
             li.classList.add('bad')
         }
+	    
+	if (this.questions[this.numQuestion].correct-1 == i){
+		li.classList.add('good')
+	}
     }
 
     saveAnswer = () => {
