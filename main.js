@@ -49,6 +49,7 @@ class Quiz {
         this.nextBtn.style.display = "block"
         this.fillQuestion()
         this.whichQuestion()
+	this.stopTime()
 	this.countTime()
         this.handleListeners()
         this.listOfQA.innerHTML = ''
